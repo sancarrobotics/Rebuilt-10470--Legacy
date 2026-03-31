@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 10470: Rebuilt</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <button id="lang-toggle" class="lang-btn">🇬🇧 EN</button>
+
+    <div id="intro-screen" class="intro-container">
+        <h1 id="intro-title" class="main-title">Project 10470: Rebuilt</h1>
+        <div class="how-to-play">
+            <h3 id="how-to-title">Nasıl Oynanır?</h3>
+            <p id="how-to-text">Dağınık haldeki yapboz parçalarını sürükleyerek sağ taraftaki ızgaraya bırakın ve tarihi yapıları yeniden inşa edin. Yanlış koyduğunuz parçayı geri atabilirsiniz. Bol şans!</p>
+        </div>
+        <button id="start-game-btn">Oyuna Başla</button>
+    </div>
+
+    <div id="game-main" class="hidden">
+        <header>
+            <div class="top-bar">
+                <h1 id="header-title">Project 10470: Rebuilt</h1>
+            </div>
+            <h2 id="level-title">1. Seviye: Efes Celsus Kütüphanesi</h2>
+        </header>
+
+        <main class="game-container">
+            <div class="pieces-container" id="pieces-container"></div>
+            <div class="board-container" id="board-container"></div>
+        </main>
+    </div>
+
+    <div id="info-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 id="modal-title">Tebrikler!</h2>
+            <p id="modal-text">Bilgi metni...</p>
+            <button id="next-level-btn">Sonraki Seviye</button>
+        </div>
+    </div>
+
+    <div id="final-screen" class="final-container hidden">
+        <h1 id="final-huge-text" class="huge-text">TEBRİKLER!</h1>
+        <p id="final-sub-text" class="sub-text">Tarihi yeniden inşa ettin ve Rebuilt görevini tamamladın!</p>
+        <button id="final-restart-btn" class="giant-btn">Yeniden Oyna</button>
+    </div>
+
+    <audio id="victory-music" src="victory.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
